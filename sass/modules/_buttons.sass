@@ -1,0 +1,28 @@
+.btn
+  display: inline-block
+  font-weight: $fontweight-normal
+  line-height: $baselineheight
+  text-align: center
+  font-size: $fontbase
+  vertical-align: middle
+  border: $borderwidth solid transparent
+  transition: $btn-transition
+  border-radius: $defborderradius
+  +btn-sizing($btnpadding-y, $btnpadding-x, $fontbase, $defborderradius)
+
+.buy-btn-lg
+  +btn-sizing(12px, 35px, $fontlarge, 30px)
+  width: 100%
+
+.buy-btn-md
+  +btn-sizing(18px,50px,$fontbase, 30px)
+  background: $brand-primary
+
+.btn-dark
+  +btn-variant($btncol, lighten($btn-drkbg,40%),$btn-borderdrk)
+
+.btn-primary
+  +btn-variant($btncol, $btn-bg, $btn-border)
+
+.btn-third
+  +btn-variant($btncol, $btn-third ,$btn-borderdrk)
